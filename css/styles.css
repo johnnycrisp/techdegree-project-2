@@ -1,5 +1,81 @@
 /* Base Styles */
 
+* {
+    box-sizing: border-box;
+    hyphens: auto;
+}
+
+html {
+   font-family: 'Lora', serif;
+   font-size: 16px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', sans-serif;
+}
+h2, h3 {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(245, 242, 242);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight:700;
+}
+
+ul li:hover {
+    background-color: darkgrey;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+ul li {
+    font-family:'Comfortaa', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    background-color:white;
+    padding: 8px 8px;
+    margin: .2rem;
+}
+
+/* Flex Styles */
+
+.top-nav, .intro, .column {
+    display: flex;
+}
+    .top-nav {
+    flex-direction:column;
+    padding: 8px 8px 22px 8px;
+    text-align: center;
+}
+
+.home, .portfolio, .contact {
+    flex:1 100%;
+}
+
+.intro {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    
+}
+
+.intro-text {
+    justify-content: center;
+}
+.profile-pic {
+    order: -1;
+    max-width: 50%;
+    margin:auto;
+}
+.column {
+    flex-direction: column;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
