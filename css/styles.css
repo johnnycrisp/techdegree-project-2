@@ -2,22 +2,31 @@
 
 * {
     box-sizing: border-box;
-    hyphens: auto;
 }
 
 html {
-   font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
    font-size: 16px;
 }
 h1, h2, h3, h4 {
-    font-family: 'Comfortaa', sans-serif;
+font-family: 'Noto Sans', sans-serif;
 }
-h2, h3 {
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:large;
     text-align: center;
+    margin: 2.5rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+
 }
 
 header {
-    background-color: rgb(245, 242, 242);
+    background-color: rgb(245, 244, 244);
 }
 
 a {
@@ -26,21 +35,54 @@ a {
     font-weight:700;
 }
 
-ul li:hover {
-    background-color: darkgrey;
-}
-
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 900;
+   
 }
 ul li {
-    font-family:'Comfortaa', sans-serif;
-    font-size: .8rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .9rem;
     text-transform: uppercase;
     background-color:white;
     padding: 8px 8px;
     margin: .2rem;
+}
+
+p {
+    line-height: 1.54321;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.5rem; 
+}
+
+
+/* Classes and IDs */
+
+.wrapper {
+    margin: 0 16px;
+}
+
+.contact-section {
+    background-color: rgb(245, 244, 244);
+}
+
+.column {
+    padding-bottom: 1rem;
+}
+
+section.contact-section {
+    padding: 1px 0;
+}
+
+.contact-text {
+    line-height: 1.54321;
+    text-align: center;
+    padding: 0 16px 1.5rem;
+}
+
+ul li:hover {
+    background-color: darkgrey;
 }
 
 /* Flex Styles */
@@ -60,17 +102,18 @@ ul li {
 
 .intro {
     flex-direction: column;
-    padding: 1rem 1rem;
-    
+    padding: 16px;
 }
 
 .intro-text {
     justify-content: center;
+    text-align: center;
 }
 .profile-pic {
     order: -1;
-    max-width: 50%;
+    max-width: 60%;
     margin:auto;
+    padding-bottom:1.5rem;
 }
 .column {
     flex-direction: column;
