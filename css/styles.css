@@ -1,154 +1,298 @@
 /* Base Styles */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-h1, h2, h3, h4 {
-font-family: 'Noto Sans', sans-serif;
+main {
+    background-color: aquamarine;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Sans", sans-serif;
 }
 h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size:large;
-    text-align: center;
-    margin: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  margin: 2.5rem;
 }
 
 h3 {
-    text-align: center;
-    font-size: 1.5rem;
-
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 header {
-    background-color: rgb(245, 244, 244);
+  background-color: rgb(245, 244, 244);
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    font-weight:700;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 h1 {
-    font-size: 1.8rem;
-    font-weight: 900;
-   
+  font-size: 1.4rem;
+  font-weight: 900;
 }
 ul li {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: .9rem;
-    text-transform: uppercase;
-    background-color:white;
-    padding: 8px 8px;
-    margin: .2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 8px 8px;
+  margin: 0.2rem;
 }
 
 p {
-    line-height: 1.54321;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 1.5rem; 
-}
-
-hr {
-    width: calc(100% - 32px);
+  line-height: 1.54321;
+  text-align: center;
+  margin: 0;
 }
 
 /* Classes and IDs */
 
 .wrapper {
-    margin: 0 16px;
+  margin: 0 16px;
 }
 
 .contact-section {
-    background-color: rgb(245, 244, 244);
+  background-color: rgb(245, 244, 244);
 }
+
+.contact-wrapper {
+  margin: 0px 16px;
+  padding: 8px 0 32px;
+  border-bottom: 1px solid grey;
+}
+
 .bottom-nav {
-        background-color: rgb(245, 244, 244);
-        padding: 16px;
+  background-color: rgb(245, 244, 244);
+  padding: 16px;
 }
 .bottom-nav li {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(245, 244, 244);
+  margin: 0;
+  padding: 8px 0 16px;
+  background-color: rgb(245, 244, 244);
 }
 
 .column {
-    padding-bottom: 1rem;
-}
-
-section.contact-section {
-    padding: 1px 0;
+  padding: 24px 0 24px;
 }
 
 .contact-text {
-    line-height: 1.54321;
-    text-align: center;
-    padding: 0 16px 1.5rem;
-
+  line-height: 1.54321;
+  text-align: center;
+  padding: 0 16px 1.5rem;
 }
 
-.main-nav ul li:hover {
-    background-color: darkgrey;
+.top-nav ul li:hover {
+  background-color: darkgrey;
 }
 
+#portfolio {
+  padding-top: 16px;
+}
+#skills {
+  padding-top: 16px;
+}
 /* Flex Styles */
 
-.top-nav, .intro, .column, .bottom-nav {
-    display: flex;
+.top-nav,
+.intro,
+.column,
+.bottom-nav {
+  display: flex;
 }
-    .top-nav {
-    flex-direction:column;
-    padding: 8px 8px 22px 8px;
-    text-align: center;
+.top-nav {
+  flex-direction: column;
+  padding: 8px 8px 22px 8px;
+  text-align: center;
+  background-color: rgb(128, 128, 255);
 }
 
-.home, .portfolio, .contact {
-    flex:1 100%;
+.home,
+.portfolio,
+.contact {
+  flex: 1 100%;
 }
 
 .intro {
-    flex-direction: column;
-    padding: 16px;
+  flex-direction: column;
+  padding: 32px;
 }
 
 .intro-text {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 .profile-pic {
-    order: -1;
-    max-width: 60%;
-    margin:auto;
-    padding-bottom:1.5rem;
+  order: -1;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 1.5rem;
 }
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .bottom-nav {
-justify-content: space-between;
+  justify-content: space-between;
 }
 .footer-home {
-font-family: 'Noto Sans', sans-serif;
-font-weight: bold;
-text-transform: capitalize;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  /* Header */
 
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-} 
+  h1 {
+    flex: 1 100%;
+  }
+
+  .top-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-nav li {
+    flex: 1;
+    background-color: rgb(128, 128, 255);
+    padding: 0 0;
+    margin: 8px 4px 16px;
+    max-width: 10%;
+    align-items: center;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 24px;
+  }
+  .intro-text {
+    order: -1;
+    flex: 1;
+    text-align: left;
+    padding-right: 2%;
+  }
+  .profile-pic {
+    flex: 1;
+  }
+
+  /* Main */
+
+  #portfolio,
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h2 {
+    flex: 1 100%;
+  }
+  .column {
+    flex: 1 50%;
+    max-width: calc(50% - 16px);
+    margin: 0 8px;
+  }
+  #juggling {
+    align-self: center;
+  }
+
+  /* Footer */
+}
 
 @media screen and (min-width: 1024px) {
+  /* Header */
 
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 24px 32px;
+  }
 
+  h1 {
+    flex: 1;
+    margin-right: auto;
+    align-self: center;
+
+  }
+
+  .top-nav ul {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .top-nav li {
+    flex: 1;
+    background-color: rgb(128, 128, 255);
+    padding: 0 0;
+    margin: 0px 16px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 24px;
+  }
+  .intro-text {
+    order: -1;
+    flex: 1;
+    text-align: left;
+    padding-right: 2%;
+  }
+  .profile-pic {
+    flex: 1;
+  }
+
+  /* Main */
+
+  #portfolio,
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h2 {
+    flex: 1 100%;
+  }
+  .column {
+    flex: 1 33%;
+    max-width: calc(33% - 16px);
+    margin: 0 8px;
+  }
+
+  #juggling {
+    align-self: auto;
+  }
+
+  /* Footer */
 }
