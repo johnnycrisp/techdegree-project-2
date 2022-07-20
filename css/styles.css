@@ -9,7 +9,7 @@ html {
   font-size: 16px;
 }
 main {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 h1,
@@ -76,8 +76,11 @@ p {
   border-bottom: 1px solid grey;
 }
 
-.bottom-nav {
+footer {
   background-color: rgb(245, 244, 244);
+}
+
+.bottom-nav {
   padding: 16px;
 }
 .bottom-nav li {
@@ -106,6 +109,11 @@ p {
 #skills {
   padding-top: 16px;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Flex Styles */
 
 .top-nav,
@@ -157,7 +165,13 @@ p {
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
+@media screen and (max-width:768px) {
+.footer-portfolio, .footer-skills, .footer-contact {
+    display:none;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* Header */
 
   .top-nav {
@@ -165,6 +179,10 @@ p {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .top-nav ul li:hover {
+  background-color:rgb(128, 128, 255);
+}
 
   h1 {
     flex: 1 100%;
@@ -183,6 +201,7 @@ p {
     max-width: 10%;
     align-items: center;
   }
+
 
   .intro {
     display: flex;
@@ -222,6 +241,27 @@ p {
   }
 
   /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-home {
+    padding: 32px 16px;
+    text-align: left;
+  }
+
+  .bottom-nav li {
+    margin: 0 8px;
+    padding: 0 8px;
+  }
+
+  .footer-top {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -236,17 +276,19 @@ p {
     padding: 24px 32px;
   }
 
+  .top-nav ul li:hover {
+  background-color: rgb(128, 128, 255);
+}
+
   h1 {
     flex: 1;
     margin-right: auto;
     align-self: center;
-
   }
 
   .top-nav ul {
     display: flex;
     align-items: center;
-    
   }
 
   .top-nav li {
@@ -295,4 +337,24 @@ p {
   }
 
   /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-home {
+    padding: 32px 16px;
+    text-align: left;
+  }
+
+  .bottom-nav li {
+    padding: 0 16px;
+  }
+
+  .footer-top {
+    display: none;
+  }
 }
