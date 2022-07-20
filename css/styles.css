@@ -56,6 +56,9 @@ p {
     padding-bottom: 1.5rem; 
 }
 
+hr {
+    width: calc(100% - 32px);
+}
 
 /* Classes and IDs */
 
@@ -64,6 +67,15 @@ p {
 }
 
 .contact-section {
+    background-color: rgb(245, 244, 244);
+}
+.bottom-nav {
+        background-color: rgb(245, 244, 244);
+        padding: 16px;
+}
+.bottom-nav li {
+    margin: 0;
+    padding: 0;
     background-color: rgb(245, 244, 244);
 }
 
@@ -79,15 +91,16 @@ section.contact-section {
     line-height: 1.54321;
     text-align: center;
     padding: 0 16px 1.5rem;
+
 }
 
-ul li:hover {
+.main-nav ul li:hover {
     background-color: darkgrey;
 }
 
 /* Flex Styles */
 
-.top-nav, .intro, .column {
+.top-nav, .intro, .column, .bottom-nav {
     display: flex;
 }
     .top-nav {
@@ -117,6 +130,15 @@ ul li:hover {
 }
 .column {
     flex-direction: column;
+}
+
+.bottom-nav {
+justify-content: space-between;
+}
+.footer-home {
+font-family: 'Noto Sans', sans-serif;
+font-weight: bold;
+text-transform: capitalize;
 }
 
 /* Media Queries */
