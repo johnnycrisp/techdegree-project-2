@@ -199,7 +199,7 @@ footer {
   .footer-skills,
   .footer-contact,
   .footer-home-right {
-    display: flex;
+    display: block;
   }
 
   .top-nav ul li:hover {
@@ -383,6 +383,7 @@ footer {
   .footer-skills,
   .footer-contact,
   .footer-home-right {
-    display: flex;
+    display: block;
+    flex: 1;
   }
 }
